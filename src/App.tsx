@@ -6,6 +6,9 @@ import { messages } from "./data/messages.ts";
 import { Page } from './components/Page.tsx';
 import { WavingHand } from "./components/WavingHand";
 import { AIDialog } from "./components/AIDialog";
+import { BouncingTesco } from "./components/BouncingTesco";
+import { BouncingSantander } from "./components/BouncingSantander";
+import { BouncingLexus } from "./components/BouncingLexus";
 
 const MESSAGES_PER_PAGE = 3;
 const TOTAL_PAGES = Math.ceil(messages.length / MESSAGES_PER_PAGE);
@@ -115,6 +118,10 @@ function App() {
 				onClose={() => setIsDialogOpen(false)}
 				onGenerate={handleGenerate}
 			/>
+
+			<BouncingTesco />
+			<BouncingSantander />
+			<BouncingLexus />
 		</div>
 	);
 }
