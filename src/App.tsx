@@ -9,6 +9,7 @@ import { AIDialog } from "./components/AIDialog";
 import { BouncingTesco } from "./components/BouncingTesco";
 import { BouncingSantander } from "./components/BouncingSantander";
 import { BouncingLexus } from "./components/BouncingLexus";
+import { Marquee } from "./components/Marquee"
 
 const MESSAGES_PER_PAGE = 3;
 const TOTAL_PAGES = Math.ceil(messages.length / MESSAGES_PER_PAGE);
@@ -122,6 +123,7 @@ function App() {
 			<BouncingTesco />
 			<BouncingSantander />
 			<BouncingLexus />
+			<Marquee />
 		</div>
 	);
 }
