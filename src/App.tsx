@@ -125,6 +125,7 @@ function App() {
 			<BouncingSantander />
 			<BouncingLexus />
 			<Marquee />
+			<img src="/notepad.gif" alt="Notepad" className="fixed bottom-6 left-6 h-24" />
 		</div>
 	);
 }
