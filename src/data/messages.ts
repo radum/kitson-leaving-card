@@ -132,5 +132,10 @@ export const messages = [
 		id: 23,
 		author: "Jon",
 		content: "We barely crossed paths, but wanted to wish you all the best for next week.  Sorry to see you go, but onwards and upwards."
+	},
+	{
+		id: 24,
+		author: "Nathan",
+		content: "Been great working with you Kitson. Best of luck at Citi, hope you have fun and dont miss AImar too much"
 	}
 ];
