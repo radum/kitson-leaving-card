@@ -112,4 +112,10 @@ export const messages = [
 		content:
 			"Pleasure working with you. Thanks for bringing fresh blood in the project and wish you all the best in the future endevours.",
 	},
+	{
+		id: 20,
+		author: "Chris H",
+		content:
+			"Sadly never had the chance to work together but always a pleasure, the conversations in web cop will be missed! All the best on your next venture mate! ",
+	},
 ];
