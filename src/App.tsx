@@ -11,6 +11,7 @@ import { BouncingSantander } from "./components/BouncingSantander";
 import { BouncingLexus } from "./components/BouncingLexus";
 import { Marquee } from "./components/Marquee";
 import { Alert } from "./components/Alert";
+import { BackgroundMusic } from "./components/BackgroundMusic";
 
 const MESSAGES_PER_PAGE = 3;
 const TOTAL_PAGES = Math.ceil(messages.length / MESSAGES_PER_PAGE);
@@ -128,6 +129,7 @@ function App() {
 			<Marquee />
 			<Alert />
 			<img src="/notepad.gif" alt="Notepad" className="fixed bottom-6 left-6 h-24" />
+			<BackgroundMusic />
 		</div>
 	);
 }
