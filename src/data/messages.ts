@@ -122,5 +122,15 @@ export const messages = [
 		id: 21,
 		author: "Ed P",
 		content: "goodbye Kitson, I will miss you and your cheery countenance but I will mainly miss Teddy - all the very best for the future :)"
+	},
+	{
+		id: 22,
+		author: "Ekaete",
+		content: "It was so good to work with you on Santander, albeit briefly! Wishing you all the best at Citi, and you must must must resist buying a gilet :D"
+	},
+	{
+		id: 23,
+		author: "Jon",
+		content: "We barely crossed paths, but wanted to wish you all the best for next week.  Sorry to see you go, but onwards and upwards."
 	}
 ];
