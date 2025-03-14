@@ -5,12 +5,15 @@ import { Waves as Wave } from "lucide-react";
 import { messages } from "./data/messages.ts";
 import { Page } from './components/Page.tsx';
 import { WavingHand } from "./components/WavingHand";
+import { AIDialog } from "./components/AIDialog";
 
 const MESSAGES_PER_PAGE = 3;
 const TOTAL_PAGES = Math.ceil(messages.length / MESSAGES_PER_PAGE);
 
 function App() {
 	const [currentPage, setCurrentPage] = useState(0);
+	const [isDialogOpen, setIsDialogOpen] = useState(false);
+	const [showHotdog, setShowHotdog] = useState(false);
 
 	const getCurrentPageMessages = () => {
 		const start = currentPage * MESSAGES_PER_PAGE;
@@ -23,6 +26,10 @@ function App() {
 
 	const handlePrevPage = () => {
 		setCurrentPage((prev) => (prev - 1 + TOTAL_PAGES) % TOTAL_PAGES);
+	};
+
+	const handleGenerate = (text: string) => {
+		setShowHotdog(true);
 	};
 
 	return (
@@ -41,24 +48,31 @@ function App() {
 
 				<div className="grid lg:grid-cols-2 gap-8">
 					{/* 3D Canvas */}
-					<div className="h-[600px] bg-gray-300 rounded-xl overflow-hidden shadow-xl">
-						<Canvas>
-							<PerspectiveCamera
-								makeDefault
-								position={[0, 0, 10]}
-							/>
-							<ambientLight intensity={1.5} />
-							<spotLight
-								position={[10, 10, 10]}
-								angle={0.15}
-								penumbra={1}
-							/>
-							<pointLight position={[10, 10, 10]} />
-							<Suspense fallback={null}>
-								<WavingHand />
-							</Suspense>
-							<OrbitControls enableZoom={false} />
-						</Canvas>
+					<div className="h-[600px] bg-gray-300 rounded-xl overflow-hidden shadow-xl relative">
+						{!showHotdog && (
+							<Canvas>
+								<PerspectiveCamera
+									makeDefault
+									position={[0, 0, 10]}
+								/>
+								<ambientLight intensity={1.5} />
+								<spotLight
+									position={[10, 10, 10]}
+									angle={0.15}
+									penumbra={1}
+								/>
+								<pointLight position={[10, 10, 10]} />
+								<Suspense fallback={null}>
+									<WavingHand />
+								</Suspense>
+								<OrbitControls enableZoom={false} />
+							</Canvas>
+						)}
+						<img
+							src="/hotdog.jpg"
+							alt="Kitson"
+							className={`w-full h-full object-cover absolute inset-0 transition-opacity duration-300 ${showHotdog ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+						/>
 					</div>
 
 					{/* Messages Section */}
@@ -86,6 +100,21 @@ function App() {
 					</div>
 				</div>
 			</div>
+
+			{/* AI Generation Button */}
+			<button
+				onClick={() => setIsDialogOpen(true)}
+				className="fixed bottom-6 right-6 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors shadow-lg"
+			>
+				Gen with AI
+			</button>
+
+			{/* AI Dialog */}
+			<AIDialog
+				isOpen={isDialogOpen}
+				onClose={() => setIsDialogOpen(false)}
+				onGenerate={handleGenerate}
+			/>
 		</div>
 	);
 }
