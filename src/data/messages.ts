@@ -118,4 +118,9 @@ export const messages = [
 		content:
 			"Sadly never had the chance to work together but always a pleasure, the conversations in web cop will be missed! All the best on your next venture mate! ",
 	},
+	{
+		id: 21,
+		author: "Ed P",
+		content: "goodbye Kitson, I will miss you and your cheery countenance but I will mainly miss Teddy - all the very best for the future :)"
+	}
 ];
