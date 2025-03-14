@@ -88,7 +88,7 @@ function App() {
 							totalPages={TOTAL_PAGES}
 						/>
 
-						<div className="absolute bottom-0 left-0 right-0 p-4 flex justify-between bg-gradient-to-t from-white">
+						<div className="absolute bottom-0 left-0 right-0 p-4 flex justify-between bg-gradient-to-t from-white z-10">
 							<button
 								onClick={handlePrevPage}
 								className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
