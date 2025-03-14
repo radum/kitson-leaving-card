@@ -62,7 +62,7 @@ function App() {
 					</div>
 
 					{/* Messages Section */}
-					<div className="relative h-[600px] bg-white rounded-xl shadow-xl overflow-hidden">
+					<div className="relative h-[640px] bg-white rounded-xl shadow-xl overflow-hidden">
 						<Page
 							messages={getCurrentPageMessages()}
 							pageNumber={currentPage + 1}

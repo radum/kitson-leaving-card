@@ -63,151 +63,17 @@ export const messages = [
 		id: 11,
 		author: "Filloreta",
 		content:
-			"Best of luck in your next chapter!It's been great working with you - you'll be missed!",
+			"Best of luck in your next chapter! It's been great working with you - you'll be missed!",
 	},
 	{
 		id: 12,
-		author: "YourName",
-		content: "YourMsg",
+		author: "Michael",
+		content: "All the very best of luck in your next adventure.",
 	},
 	{
 		id: 13,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 14,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 15,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 16,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 17,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 18,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 19,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 20,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 21,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 22,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 23,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 24,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 25,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 26,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 27,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 28,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 29,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 30,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 31,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 32,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 33,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 34,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 35,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 36,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 37,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 38,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 39,
-		author: "YourName",
-		content: "YourMsg",
-	},
-	{
-		id: 40,
-		author: "YourName",
-		content: "YourMsg",
+		author: "Ben Pitman",
+		content:
+			"' -- DROP TABLE good_luck_messages; CREATE TABLE good_riddance_messages (id int, author varchar(255), content varchar(255)); INSERT INTO ",
 	},
 ];
