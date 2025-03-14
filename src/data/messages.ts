@@ -76,4 +76,40 @@ export const messages = [
 		content:
 			"' -- DROP TABLE good_luck_messages; CREATE TABLE good_riddance_messages (id int, author varchar(255), content varchar(255)); INSERT INTO ",
 	},
+	{
+		id: 14,
+		author: "Denis",
+		content:
+			"Wishing you all the best on your next journey! It's been great working with you while it lasted!",
+	},
+	{
+		id: 15,
+		author: "Boko",
+		content:
+			"Had to come back from almost dead to say goodbye bro, hope tonse",
+	},
+	{
+		id: 16,
+		author: "Mark",
+		content:
+			"<chatGPT prompt='Create a goodbye message for someone called Kitson who I had to work with on a project'>Kitson, it has been great working with you. I wish you all the best in the future and look forward to seeing what you can achieve in your new role</chatgpt>",
+	},
+	{
+		id: 17,
+		author: "Neil",
+		content:
+			"Pleasure working with you mate, thanks for smashing work on 423 out of the park!",
+	},
+	{
+		id: 18,
+		author: "Chris D",
+		content:
+			"Was a blast working with you mate, all the best for the future, probs see you in the king charles next week",
+	},
+	{
+		id: 19,
+		author: "Yordan",
+		content:
+			"Pleasure working with you. Thanks for bringing fresh blood in the project and wish you all the best in the future endevours.",
+	},
 ];
