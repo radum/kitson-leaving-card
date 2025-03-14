@@ -59,13 +59,14 @@ function App() {
 									makeDefault
 									position={[0, 0, 10]}
 								/>
-								<ambientLight intensity={1.5} />
+								<ambientLight intensity={1} />
 								<spotLight
 									position={[10, 10, 10]}
 									angle={0.15}
 									penumbra={1}
 								/>
 								<pointLight position={[10, 10, 10]} />
+								<directionalLight position={[5, 5, 5]} intensity={2} />
 								<Suspense fallback={null}>
 									<WavingHand />
 								</Suspense>
