@@ -137,5 +137,10 @@ export const messages = [
 		id: 24,
 		author: "Nathan",
 		content: "Been great working with you Kitson. Best of luck at Citi, hope you have fun and dont miss AImar too much"
+	},
+	{
+		id: 25,
+		author: "Francesco",
+		content: "All the best Kitson!"
 	}
 ];
