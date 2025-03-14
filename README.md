@@ -1,3 +1,3 @@
-# Kitson Leavings' Card
+# Kitson Leaving Card
 
 :(
